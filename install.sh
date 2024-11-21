@@ -8,6 +8,7 @@ sudo apt update -y && sudo apt-get update -y
 curl -sSfL 'https://github.com/GaiaNet-AI/gaianet-node/releases/latest/download/install.sh' | bash
 source ~/.bashrc
 gaianet init --config https://raw.githubusercontent.com/GaiaNet-AI/node-configs/main/qwen2-0.5b-instruct/config.json
+sed -i 's/"port": 8080/"port": 8200/' "cd gaianet/config.json"
 gaianet start
 gaianet info
 
