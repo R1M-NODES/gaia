@@ -30,3 +30,5 @@ Screen
 screen -S faker_session
 python3 ~/random_chat_with_faker.py
 ```
+
+https://www.gaianet.ai/gaia-domain-name?referralCode=RwxQes
