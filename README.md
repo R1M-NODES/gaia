@@ -9,6 +9,13 @@ Logs
 journalctl -u gaianet.service -f
 ```
 
+Restart
+```
+sudo systemctl restart gaianet.service && journalctl -u gaianet.service -f
+```
+
+
+
 <b> Install Script </b>
 
 ```
