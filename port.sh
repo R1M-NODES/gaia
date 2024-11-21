@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Path to the configuration file
-CONFIG_FILE="cd gaianet/config.json"
+# Path to the configuration file (update this path if necessary)
+CONFIG_FILE="$HOME/gaianet/config.json"  # Or provide an absolute path, e.g., "/home/user/gaianet/config.json"
 
 # Old and new ports
 OLD_PORT=8080
