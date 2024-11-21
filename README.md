@@ -14,7 +14,10 @@ Restart
 sudo systemctl restart gaianet.service && journalctl -u gaianet.service -f
 ```
 
-
+Delete
+```
+sudo systemctl stop gaianet.service && sudo systemctl disable gaianet.service && sudo rm -f /etc/systemd/system/gaianet.service && sudo systemctl daemon-reload && sudo rm -rf /root/gaianet
+```
 
 <b> Install Script </b>
 
