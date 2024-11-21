@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Path to the configuration file (update this path if necessary)
-CONFIG_FILE="$HOME/gaianet/config.json"  # Or provide an absolute path, e.g., "/home/user/gaianet/config.json"
+# Path to the configuration file, using $HOME
+CONFIG_FILE="$HOME/gaianet/config.json"
 
 # Old and new ports
-OLD_PORT=8080
-NEW_PORT=8200
+OLD_PORT="8080"
+NEW_PORT="8200"
 
 # Check if jq is installed
 if ! command -v jq &>/dev/null; then
@@ -26,8 +26,8 @@ if [[ ! -f "$CONFIG_FILE" ]]; then
   exit 1
 fi
 
-# Change the port in the configuration file
-jq ".port = $NEW_PORT" "$CONFIG_FILE" > temp_config.json && mv temp_config.json "$CONFIG_FILE"
+# Replace the port in the configuration file for llamaedge_port
+jq '.llamaedge_port = "'"$NEW_PORT"'"' "$CONFIG_FILE" > temp_config.json && mv temp_config.json "$CONFIG_FILE"
 
 if [[ $? -eq 0 ]]; then
   echo "Port successfully changed from $OLD_PORT to $NEW_PORT in the $CONFIG_FILE file."
