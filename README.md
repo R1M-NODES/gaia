@@ -6,7 +6,24 @@ bash <(curl -s https://raw.githubusercontent.com/R1M-NODES/gaia/master/install.s
 
 Port
 ```
+bash <(curl -s https://raw.githubusercontent.com/R1M-NODES/gaia/master/install2.sh)
+```
+
+Port
+```
 nano "$HOME/gaianet/config.json"
+```
+
+<b> Install Script </b>
+
+```
+bash <(curl -s https://raw.githubusercontent.com/R1M-NODES/gaia/master/script.sh)
+```
+
+Screen
+```
+screen -S faker_session
+python3 ~/random_chat_with_faker.py
 ```
 
 Logs
@@ -22,18 +39,6 @@ sudo systemctl restart gaianet.service && journalctl -u gaianet.service -f
 Delete
 ```
 sudo systemctl stop gaianet.service && sudo systemctl disable gaianet.service && sudo rm -f /etc/systemd/system/gaianet.service && sudo systemctl daemon-reload && sudo rm -rf /root/gaianet
-```
-
-<b> Install Script </b>
-
-```
-bash <(curl -s https://raw.githubusercontent.com/R1M-NODES/gaia/master/script.sh)
-```
-
-Screen
-```
-screen -S faker_session
-python3 ~/random_chat_with_faker.py
 ```
 
 https://www.gaianet.ai/gaia-domain-name?referralCode=RwxQes
