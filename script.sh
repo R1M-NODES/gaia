@@ -4,7 +4,7 @@ source <(curl -s https://raw.githubusercontent.com/R1M-NODES/utils/master/common
 printLogo
 
 
-read -p "Wallet" WALLET_ADDRESS
+read -p "Subdomain: " WALLET_ADDRESS
 
 sudo apt update -y && sudo apt upgrade -y
 
