@@ -4,6 +4,11 @@
 bash <(curl -s https://raw.githubusercontent.com/R1M-NODES/gaia/master/install.sh)
 ```
 
+Port
+```
+nano "$HOME/gaianet/config.json"
+```
+
 Logs
 ```
 journalctl -u gaianet.service -f
