@@ -6,13 +6,14 @@ bash <(curl -s https://raw.githubusercontent.com/R1M-NODES/gaia/master/install.s
 
 Port
 ```
+nano "$HOME/gaianet/config.json"
+```
+
+Install 2
+```
 bash <(curl -s https://raw.githubusercontent.com/R1M-NODES/gaia/master/install2.sh)
 ```
 
-Port
-```
-nano "$HOME/gaianet/config.json"
-```
 
 <b> Install Script </b>
 
